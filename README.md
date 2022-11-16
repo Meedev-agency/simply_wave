@@ -2,27 +2,25 @@
 # Simply wave
 A simple package in vanilla JS to make text wave as you want
 
-## Installation
 
-Install with npm
+## Installation
 
 ```bash
   npm install simply_wave
-  cd my-project
 ```
     
 ## Usage/Examples
 
 ```html
-<h2 id="wave">This a demo<h2>
+<p id="wave">This text wave<p>
 ```
 
 ```javascript
-import { wave } from "simply_wave";
+import { wave } from './simplywave'
 
 const waveOptions = {
-    target: "wave1",
-    animationDelay: 0,
+    target: "wave",
+    animationDelay: 200,
     letterDelay: 20,
     easing: "linear"
 }
@@ -43,4 +41,9 @@ wave(waveOptions)
 - `direction` reverse / alternate / alternate-reverse / normal
 - `opacity` true or false
 - `overflow` true or false
+
+
+## Authors
+
+- [Gabriel Voissiere](https://github.com/Meedev-agency)
 
