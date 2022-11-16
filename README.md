@@ -7,7 +7,7 @@ A simple package in vanilla JS to make text wave as you want
 Install with npm
 
 ```bash
-  npm install my-project
+  npm install simply_wave
   cd my-project
 ```
     
@@ -18,7 +18,7 @@ Install with npm
 ```
 
 ```javascript
-import { wave } from './simplywave'
+import { wave } from "simply_wave";
 
 const waveOptions = {
     target: "wave1",
