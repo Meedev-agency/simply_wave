@@ -1,7 +1,17 @@
 
-# Simply wave
-A simple package in vanilla JS to make text wave as you want
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
+
+
+# Simply wave
+[![Version](https://img.shields.io/github/package-json/v/Meedev-agency/simply_wave/main?label=Version&style=for-the-badge)](https://choosealicense.com/licenses/mit/)
+
+[![License](https://img.shields.io/npm/l/simply_wave?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
+
+
+## Overview
+
+A simple JavaScript package that allows you to add wave effects to your texts and titles in the easiest way possible
 
 ## Installation
 
@@ -9,12 +19,19 @@ A simple package in vanilla JS to make text wave as you want
   npm install simply_wave
 ```
     
-## Usage/Examples
+## Features
+
+- wave effects
+- mirror effects ( soon )
+## Usage
+
+#### HTML
 
 ```html
 <p id="wave">This text wave<p>
 ```
 
+#### JavaScript
 ```javascript
 import { wave } from './simplywave'
 
@@ -28,22 +45,32 @@ const waveOptions = {
 wave(waveOptions)
 ```
 
-## Options 
 
-- `target` id of the text in html
-- `transform` in em / rem / % or px
-- `duration` of the animation (for each letters)
-- `animationDelay` time before animation start
-- `letterDelay` time before each letter's animation start
-- `easing` ease-in / ease-out / ease-in-out / linear / cubic-bezier
-- `iterations` number / Infinity
-- `fill` both / forwards / backwards / none
-- `direction` reverse / alternate / alternate-reverse / normal
-- `opacity` true or false
-- `overflow` true or false
+## Options
+
+#### Required
+
+| Parameter | Type     | Description                | Units |
+| :-------- | :------- | :------------------------- | :---- |
+| `target` | `string` | Your target | HTML id |
+
+#### Optional
+
+| Parameter | Type     | Description                | Value |
+| :-------- | :------- | :------------------------- | :---- |
+| `transform` | `string` | value of the letter movement | em, rem, px, % |
+| `duration` | `number` | animation duration for each letters | ms |
+| `animationDelay` | `number` | time before animation start | ms |
+| `letterDelay` | `number` | letter delay for each letters | ms |
+| `easing` | `string` | like timing function in CSS | ease-in / ease-out / ease-in-out / linear / cubic-bezier |
+| `iterations` | `number / string` | number of animation repetitions | string = Infinity / number = 0 - ∞ |
+| `fill` | `string` | how the animation finish | both / forwards / backwards / none |
+| `direction` | `string` | direction of the animation | reverse / alternate / alternate-reverse / normal |
+| `opacity` | `boolean` | if the letter comme with a fade | boolean |
+| `overflow` | `boolean` | if the letters appear | boolean |
 
 
-## Authors
+## Used By
 
-- [Gabriel Voissiere](https://github.com/Meedev-agency)
+- Neza agency - www.neza.fr
 
