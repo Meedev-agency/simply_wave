@@ -33,7 +33,7 @@ A simple JavaScript package that allows you to add wave effects to your texts an
 
 #### JavaScript
 ```javascript
-import { wave } from './simplywave'
+import { wave } from "simply_wave"
 
 const waveOptions = {
     target: "wave",
