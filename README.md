@@ -18,6 +18,9 @@ A simple JavaScript package that allows you to add wave effects to your texts an
 ```bash
   npm install simply_wave
 ```
+## Demo
+
+[See the demo and test simply wave](https://simplywavedemo.netlify.app/)
     
 ## Features
 
