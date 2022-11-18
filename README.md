@@ -28,8 +28,29 @@ A simple JavaScript package that allows you to add wave effects to your texts an
 - mirror effects ( soon )
 ## Usage
 
+### **Basic**
+
 #### HTML
 
+```html
+<p id="wave">This text wave<p>
+```
+
+#### JavaScript
+```javascript
+import { wave } from "../node_modules/simply_wave/index.js"
+
+const waveOptions = {
+    target: "wave",
+    animationDelay: 200,
+    letterDelay: 20,
+    easing: "linear"
+}
+
+wave(waveOptions)
+```
+### **React**
+#### HTML
 ```html
 <p id="wave">This text wave<p>
 ```
@@ -48,7 +69,31 @@ const waveOptions = {
 wave(waveOptions)
 ```
 
+### **Vue**
+#### HTML
+```html
+<p id="wave">This text wave<p>
+```
 
+#### JavaScript
+```javascript
+import { wave } from "simply_wave"
+
+export default {
+  name: "MyComponent",
+
+  mounted() {
+    const waveOptions = {
+      target: "wave",
+      animationDelay: 200,
+      letterDelay: 20,
+      easing: "linear"
+    }
+
+    wave(waveOptions)
+  }
+}
+```
 ## Options
 
 #### Required
@@ -77,3 +122,5 @@ wave(waveOptions)
 
 - Neza agency - www.neza.fr
 
+## Author
+**Gabriel Voissiere**
