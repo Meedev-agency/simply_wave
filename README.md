@@ -4,7 +4,7 @@
 
 
 # Simply wave
-[![Version](https://img.shields.io/github/package-json/v/Meedev-agency/simply_wave/main?label=Version&style=for-the-badge)](https://choosealicense.com/licenses/mit/)
+![Version](https://img.shields.io/github/package-json/v/Meedev-agency/simply_wave/main?label=Version&style=for-the-badge)
 
 [![License](https://img.shields.io/npm/l/simply_wave?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
 
