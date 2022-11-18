@@ -44,8 +44,12 @@ export function wave(options) {
     let newSentence = "";
     let lettersCount = 0;
 
-    if ((options?.overflow) === undefined ? false : options.overflow) {
+    let overflow = options?.overflow
+
+    if (overflow === true) {
         sentence.style.overflow = "hidden";
+    } else {
+        sentence.style.overflow = "visible";
     }
 
     letters.forEach((letter) => {

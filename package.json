@@ -1,6 +1,6 @@
 {
   "name": "simply_wave",
-  "version": "1.0.14",
+  "version": "1.0.22",
   "description": "A simple JavaScript package that allows you to add wave effects to your texts and titles in the easiest way possible",
   "main": "index.js",
   "homepage": "https://simplywavedemo.netlify.app",
