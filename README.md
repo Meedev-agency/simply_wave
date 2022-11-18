@@ -10,7 +10,6 @@
 
 
 ## Overview
-
 A simple JavaScript package that allows you to add wave effects to your texts and titles in the easiest way possible
 
 ## Installation
@@ -19,6 +18,8 @@ A simple JavaScript package that allows you to add wave effects to your texts an
   npm install simply_wave
 ```
 ## Demo
+
+![](https://github.com/Meedev-agency/simply_wave/blob/main/simply_wave_demo_gif.gif?raw=true)
 
 [See the demo and test simply wave](https://simplywavedemo.netlify.app/)
     
