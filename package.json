@@ -1,9 +1,9 @@
 {
   "name": "simply_wave",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A simple JavaScript package that allows you to add wave effects to your texts and titles in the easiest way possible",
   "main": "index.js",
-  "homepage": "https://github.com/Meedev-agency/simply_wave",
+  "homepage": "https://simplywavedemo.netlify.app",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Meedev-agency/simply_wave.git"
