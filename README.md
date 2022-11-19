@@ -19,15 +19,15 @@ A simple JavaScript package that allows you to add wave effects to your texts an
 ```
 ## Demo
 
-![](https://github.com/Meedev-agency/simply_wave/blob/main/simply_wave_demo_gif.gif?raw=true)
+![](./demo.gif)
 
 [See the demo and test simply wave](https://simplywavedemo.netlify.app/)
     
 ## Features
 
 - wave effects
-- mirror effects ( soon )
-## Usage
+- wave mirror effects
+## Usage ( Classic )
 
 ### **Basic**
 
@@ -97,13 +97,13 @@ export default {
 ```
 ## Options
 
-#### Required
+#### **Required**
 
 | Parameter | Type     | Description                | Units |
 | :-------- | :------- | :------------------------- | :---- |
 | `target` | `string` | Your target | HTML id |
 
-#### Optional
+#### **Optional**
 
 | Parameter | Type     | Description                | Value |
 | :-------- | :------- | :------------------------- | :---- |
@@ -117,7 +117,55 @@ export default {
 | `direction` | `string` | direction of the animation | reverse / alternate / alternate-reverse / normal |
 | `opacity` | `boolean` | if the letter comme with a fade | boolean |
 | `overflow` | `boolean` | if the letters appear | boolean |
+| `mirror` | `boolean` | add mirror effect | boolean |
+| `mirrorStyle` | `boolean` | add second effect to mirror animation | boolean |
 
+## Usage ( Mirror )
+### **Information**
+We strongly recommande to use mirror effects with `overflow` set to `false` and `opacity` set to `true` for a better visual (like the gif). 
+
+### **Possibilities**
+
+#### classic
+![](./simply_wave_demo_gif.gif)
+```javascript
+const waveOptions = {
+    target: "wave",
+    transform: "100%",
+    mirror: true,
+    mirrorStyle: false
+}
+```
+#### rotation
+![](./mirror_rotate.gif)
+```javascript
+const waveOptions = {
+    target: "wave",
+    transform: "-100%",
+    mirror: true,
+    mirrorStyle: false
+}
+```
+#### overlap
+![](./mirror_overlap.gif)
+```javascript
+const waveOptions = {
+    target: "wave",
+    transform: "100%",
+    mirror: true,
+    mirrorStyle: true
+}
+```
+#### reverse wave
+![](./mirror_reverse.gif)
+```javascript
+const waveOptions = {
+    target: "wave",
+    transform: "-100%",
+    mirror: true,
+    mirrorStyle: true
+}
+```
 
 ## Used By
 

@@ -117,6 +117,11 @@ export function wave(options) {
             document.getElementById(`${options.target}-mirror`).innerHTML = newMirrorSentence
         }
     } else {
+        if (document.getElementById(`${options.target}-mirror`) !== null) {
+            document.getElementById(`${options.target}`).removeChild(document.getElementById(`${options.target}-base`))
+            document.getElementById(`${options.target}`).removeChild(document.getElementById(`${options.target}-mirror`))
+            document.getElementById(`${options.target}`).innerHTML = newSentence
+        }
         sentence.innerHTML = newSentence;
     }
 
